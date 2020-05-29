@@ -1,0 +1,21 @@
+/*==========================================================
+;Title: Discussion 1.1 
+;Author: Juvenal Gonzalez
+;Date: 29 May 2020
+;Modified by: Brooklyn Hairston
+;Description: Juvenal Gonzalez's program with errors fixed
+;============================================================
+*/
+
+//original program with errors
+var aNumber = 100;
+console.log(anumber);
+var someString = 'Apostrophes aren't easy'; 
+console.log(someString);
+
+//program with errors fixed
+
+var aNumber = 100; 
+console.log(aNumber); //changed anumber to aNumber
+var someString = 'Apostrophes aren\'t easy'; //added forward slash before apostrophe
+console.log(someString);
