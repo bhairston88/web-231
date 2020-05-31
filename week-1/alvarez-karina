@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">>
+<head>
+<title>My First Javascript</title>
+</head>
+<body>
+<h2> Average from Three Scores </h2>
+ 
+<p id="scores"></p>
+ 
+<script>
+/*
+*Title: Assignment 1.1
+*Author: Karina Alvarez
+*Date: 30 May 2020
+*Modified By: Brooklyn Hairston
+*Description: Karina Alvarez's program with errors fixed
+*/
+ 
+ // original program with errors
+
+// There are three errors in the following JavaScript code.
+var score1 = 91; // score1 with a value of 91.
+var scores2 = 98; // score2 with a value of 95. One error
+var score3 = 87; // score3 with a value of 87.
+var total = (score1 + score2 + score3/3; // Equation to get an average from three different scores. One error.
+document.getElementById(scores).innerHTML = "Your Final Score is: " +total; // Final score. One error.
+ 
+ //program with errors fixed
+
+var score1 = 91;
+var score2 = 98; //removed s from scores2 to make score2
+var score3 = 87; 
+var total = (score1 + score2 + score3)/3; //added closed parenthesis after score3 
+document.getElementById("scores").innerHTML = "Your Final Score is: " +total; //placed quotes are scores within parenthesis
+</script>
+ 
+</body>
+</html>
+
