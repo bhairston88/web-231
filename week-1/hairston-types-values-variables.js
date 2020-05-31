@@ -3,7 +3,8 @@
 ; Title: Assignment 1.5
 ; Author: Brooklyn Hairston
 ; Date: 31 May 2020
-; Description: 
+; Description: Employee records for 
+; three employees
 ;========================================
 */
 
