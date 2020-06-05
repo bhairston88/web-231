@@ -7,6 +7,6 @@
 ;===========================================
 */
 
-const header = require('../hairston-header.js')
+const header = require('./hairston-header.js')
 
 console.log(header.display('Brooklyn','Hairston','Header'))
