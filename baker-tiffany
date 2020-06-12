@@ -1,0 +1,44 @@
+/* 
+============================================ 
+; Title: discussion 3.1 
+; Author: Tiffany Baker 
+; Date: 6/10/2020 
+; Modified By: Brooklyn Hairston
+; Description: This program uses a while loop to count to 10 
+;=========================================== 
+*/ 
+    
+//original program with errors
+
+//loop prints number and counts up until count equals numberChosen variable  
+    
+
+var count  =  0 ,
+var numberChosen  =  15 ;
+
+while (count <= numberChosen ){
+  count + 1;
+  console.log(number);
+  count++;
+}
+//program without errors if counting to 10 per description
+
+var count = 0; //changed comma to semicolon
+var numberChosen = 10; //changed 15 to 10, otherwise will count to 15
+
+while (count <= numberChosen) {
+  count + 1;
+  console.log(count);//changed console.log(number) to console.log(count)
+  count++;
+}
+
+//program without errors if counting to numberChosen variable per comments
+
+var count = 0; //changed comma to semicolon
+var numberChosen = 15;
+
+while (count <= numberChosen) {
+  count + 1;
+  console.log(count); //changed console.log(number) to console.log(count)
+  count++;
+}
