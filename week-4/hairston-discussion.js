@@ -16,9 +16,9 @@ console.log(header.display('Brooklyn','Hairston','Header'))
 //program without errors
 //expected output My favorite book is Ella Enchanted.
 
-var Books = ["Howl's Moving Castle", "Good Omens", "Fire", "Ella Enchanted"]
+var Books = ["Howl's Moving Castle", "Good Omens", "Fire", "Ella Enchanted", "The Song of Achilles", "Pride and Prejudice"]
 
-for (let x = 3; x < Books.length; x++) {
+for (let x = 3; x < 4; x++) {
   console.log("My favorite book is " + Books[x] + ".");
 }
 
@@ -26,10 +26,10 @@ for (let x = 3; x < Books.length; x++) {
 //program with two errors
 //expected output My favorite book is Ella Enchanted.
 
-var Books = {"Howl's Moving Castle", "Good Omens", "Fire", "Ella Enchanted"}
+//var Books = {"Howl's Moving Castle", "Good Omens", "Fire", "Ella Enchanted"}
 
 //output
 
-for (let x = 3; x > Books.length; x++) {
-  console.log("My favorite book is " + Books[x] + ".");
-}
+//for (let x = 3; x > Books.length; x++) {
+//  console.log("My favorite book is " + Books[x] + ".");
+//}

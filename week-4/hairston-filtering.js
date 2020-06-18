@@ -2,20 +2,27 @@
 ============================================
 ; Title:  hairston-arrays.js
 ; Author: Professor Krasso
-; Date:   17 June 2020
+; Date:   18 June 2020
 ; Modified by: Brooklyn Hairston
-; Description:
+; Description: Displays how to filter and
+; select specific values in an array
 ;===========================================
 */
 
 //header
 const header = require('./hairston-header.js')
 
-console.log(header.display('Brooklyn','Hairston','Header'))
+console.log(header.display('Brooklyn','Hairston','Filtering'))
 
 //start program
 
 var vehicles = ["Car", "Truck", "Motorcycle", "Airplane", "Bus"];
+
+/**
+ * Params: array, filterValue
+ * Response: array element
+ * Description: Returns a filtered value from an array
+ */
 
 function getValue(arr, filterValue) {
   for (let x = 0; x < arr.length; x++)
@@ -26,7 +33,7 @@ function getValue(arr, filterValue) {
 
 //output
 console.log("\n");
-console.log("--DISPLAYING NAMES--");
+console.log("--DISPLAYING ARRAY ITEMS--");
 for (let x = 0; x < vehicles.length; x++) {
   console.log(vehicles[x]);
 }

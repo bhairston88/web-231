@@ -2,7 +2,7 @@
 ============================================
 ; Title:  hairston-arrays.js
 ; Author: Professor Krasso
-; Date:   17 June 2020
+; Date:   18 June 2020
 ; Modified by: Brooklyn Hairston
 ; Description: Displays how to write and call arrays
 ;===========================================
@@ -11,7 +11,7 @@
 //header
 const header = require('./hairston-header.js')
 
-console.log(header.display('Brooklyn','Hairston','Header'))
+console.log(header.display('Brooklyn','Hairston','Arrays'))
 
 //start program
 
@@ -30,8 +30,6 @@ function getFruit(arr) {
 }
 
 //output
+console.log("\n");
 getFruit(fruits);
-for (let x = 0; x < fruits.length; x++) {
-  console.log(fruits[x]);
-}
 
