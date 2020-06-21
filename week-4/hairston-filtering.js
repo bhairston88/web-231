@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  hairston-arrays.js
+; Title:  hairston-filtering.js
 ; Author: Professor Krasso
 ; Date:   18 June 2020
 ; Modified by: Brooklyn Hairston
