@@ -1,8 +1,8 @@
 /*
 ============================================
 ; Title:  hairston-built-in-functions.js
-; Author: Brooklyn Hairston
-; Date:   23 June 2020
+; Author: Professor Krasso
+; Date:   24 June 2020
 ; Modified by: Brooklyn Hairston
 ; Description: Demonstrates how to loop through an array
 ; using the forEach function
