@@ -2,9 +2,10 @@
 ============================================
 ; Title:  hairston-complex-data-structures.js
 ; Author: Professor Krasso
-; Date:   24 June 2020
+; Date:   28 June 2020
 ; Modified by: Brooklyn Hairston
-; Description:
+; Description: Demonstrates how to filter
+; a collection of array-like objects
 ;===========================================
 */
 
