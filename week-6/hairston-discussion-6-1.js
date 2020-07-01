@@ -2,7 +2,7 @@
 ============================================
 ; Title:  hairston-discussion-6-1.js
 ; Author: Brooklyn Hairston
-; Date:    June 2020
+; Date:   1 July 2020
 ; Modified by: Brooklyn Hairston
 ; Description: Program using object properties with multiple errors
 ;===========================================
