@@ -1,0 +1,59 @@
+/*
+============================================
+; Title: Objects js
+; Author: Devan Wong
+; Date: 2 July 2020
+; Modified By: Brooklyn Hairston
+; Description: Objects and built in objects [ 3 errors ]
+;===========================================
+*/
+
+//original program with errors
+/*
+var topSecret = {
+  firstName: 'Devan',
+  lastName : 'Wong',
+  birthday: 'November 7, 1990',
+  get: fullProfile() {
+  return topSecret.firstName + ' ' + topSecret.lastName + ' ' + topSecret.birthday
+  }
+  }
+  Object.defineProperty(topsecret, 'SSN', {
+  value: '123-234-1234',
+  writable: true,
+  configurable: true,
+  enumerable: true
+  });
+
+  for (let value in topSecret) {
+  console.log(topSecret[value]);
+  }
+
+  //OUT THE SSN SHOULD NOT BE SHOWN.
+  //OUTPUT Devan Wong November 7, 1990
+
+*/
+
+//program without errors
+
+  var topSecret = {
+    firstName: 'Devan',
+    lastName : 'Wong',
+    birthday: 'November 7, 1990',
+    get fullProfile() {   //removed colon after get
+    return topSecret.firstName + ' ' + topSecret.lastName + ' ' + topSecret.birthday
+    }}
+
+    Object.defineProperty(topSecret, 'SSN', {  //changed s in topsecret to uppercase
+    value: '123-234-1234',
+    writable: true,
+    configurable: true,
+    enumerable: false  //changed the value of the descriptor to false
+    })
+
+    for (let value in topSecret) {
+    console.log(topSecret[value]);
+    }
+
+    //OUT THE SSN SHOULD NOT BE SHOWN.
+    //OUTPUT Devan Wong November 7, 1990
