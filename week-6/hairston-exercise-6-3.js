@@ -2,9 +2,10 @@
 ============================================
 ; Title:  hairston-exercise-6-2.js
 ; Author: Professor Krasso
-; Date: 2 July 2020
+; Date: 3 July 2020
 ; Modified by: Brooklyn Hairston
-; Description:
+; Description: Demonstrates how to create object literals
+; and output the properties
 ;===========================================
 */
 
