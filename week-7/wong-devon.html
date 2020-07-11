@@ -1,0 +1,67 @@
+<!-- /*
+============================================
+; Title: JavaScript in Web Browsers js
+; Author: Devan Wong
+; Date: 9 July 2020
+; Modified By:
+; Description: There are two errors in this code.
+;===========================================
+*/ -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style type="text/css">
+body {
+width:600px;
+height:600px;
+background-color:red;
+}
+</style>
+<script>
+function bgFunction(){
+document.body.style.backgroundColor= "green";
+}
+</style>
+</head>
+<body>
+<div>
+
+// background should turn green when clicked.
+<button type="button" onClick=bgFunction()>Press me</button>
+</div>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style type="text/css">
+body {
+width:600px;
+height:600px;
+background-color:red;
+}
+</style>
+<script>
+function bgFunction(){
+document.body.style.backgroundColor= "green";
+}
+</script> <!--changed </style> to </script> as style tag was already closed but script tag wasn't-->
+</head>
+<body>
+<div>
+
+<!-- background should turn green when clicked.-->
+<button type="button" onClick="bgFunction()">Press me</button> <!--added quotes around bgFunction()-->
+</div>
+</body>
+</html>
