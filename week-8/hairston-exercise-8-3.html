@@ -1,0 +1,116 @@
+<!--
+============================================
+; Title:  hairston-exercise-8-3.html
+; Author: Professor Krasso
+; Date: 17 July 2020
+; Modified by: Brooklyn Hairston
+; Description: Demonstrates how to use jQuery
+;===========================================
+*/
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Exercise 8.3</title>
+  <script>
+    //header
+    const header = require('../hairston-header.js')
+      console.log(header.display('Brooklyn','Hairston','jQuery'))
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="../site.css">
+
+  <style type="text/css">
+
+  body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+  #topbar {
+    background-color: blueviolet;
+    height: 30px;
+  }
+
+  #paragraph {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  table {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  tr:nth-child(even) {
+    background-color: cyan;
+  }
+
+  tr:nth-child(odd) {
+    background-color: darkgray;
+  }
+  </style>
+
+</head>
+<body>
+  <div id="topbar"></div>
+
+  <div id="paragraph">
+  <h2>Ramblings</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non ultrices neque, at pharetra nulla. Pellentesque consectetur lectus erat, eget feugiat augue aliquet ut. Suspendisse sed venenatis eros. Etiam eleifend facilisis ex id maximus. Donec rutrum dolor id risus scelerisque, id rutrum nulla cursus. Curabitur vehicula dictum est ut mattis. Etiam ac nulla felis. Quisque accumsan nunc non lacus viverra, ac viverra nunc fermentum. Donec ullamcorper, est imperdiet laoreet sagittis, magna elit cursus velit, non viverra nunc mi nec eros. Nam non massa sit amet libero posuere rutrum. Integer eu cursus ante. Quisque ipsum lectus, auctor facilisis nibh non, pharetra porttitor nunc. Phasellus eget elit at velit dignissim egestas at non magna. Quisque sit amet odio ac libero dictum vehicula in sed lectus.
+  </p>
+  <button>Toggle</button>
+  </div>
+
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Type</th>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitId">21</a></td>
+    <td>Apple</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitId">45</a></td>
+    <td>Banana</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitId">89</a></td>
+    <td>Cherry</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitId">106</a></td>
+    <td>Strawberry</td>
+  </tr>
+  <tr>
+    <td><a href="#" class="fruitId">123</a></td>
+    <td>Watermelon</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+
+$("button").click(function() {
+  $("p").toggle();
+});
+
+$(".fruitId").click(function() {
+  event.preventDefault();
+  var fruitId = $(this).text();
+  var fruitType = $(this).closest("td").next().text();
+  alert("ID: " + fruitId + ", Type: " + fruitType);
+});
+
+</script>
+
+</body>
+</html>
