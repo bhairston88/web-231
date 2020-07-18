@@ -1,0 +1,69 @@
+<!--
+============================================
+; Title:  Assignment 8.1
+; Author: Rhiannon Kimberlin
+; Date:   18 July 2020
+; Modified By: Brooklyn Hairston
+; Description: Program using jQuery with errors
+;===========================================
+-->
+
+<!--Program without errors-->
+
+<!DOCTYPE html>
+ 	<head>
+ 	<title>Rhiannon Kimberlin Discussion 8.1</title>
+ 	</head>
+
+ 	<body>
+ 	<table style="width:30%">
+ 	<tr>
+ 	<th><B>Button</B></th>
+ 	<th><b>Image</b></th>
+ 	</tr>
+ 	<tr>
+ 	<td><button type="button" class='hide-button'>Hide</button></td>
+ 	<td><img src="https://images.all-free-download.com/images/graphicthumb/beautiful_cat_picture_6_168770.jpg" class='first-image' alt='Studious Cat'></td>
+ 	</tr>
+ 	</table>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ 	<script>
+ 	$(document).ready(() => {
+ 	$('.hide-button').on('click', () => { //changed direction of arrow function
+ 	$('.first-image').hide();  //put dot in front of first-image, as it is a class value
+ 	})
+ 	});
+ 	</script>
+   </body>
+
+  <!--Original program with errors
+  <!DOCTYPE html>
+ 	<head>
+ 	<title>Rhiannon Kimberlin Discussion 8.1</title>
+ 	</head>
+
+ 	<body>
+ 	<table style="width:30%">
+ 	<tr>
+ 	<th><B>Button</B></th>
+ 	<th><b>Image</b></th>
+ 	</tr>
+ 	<tr>
+ 	<td><button type="button" class='hide-button'>Hide</button></td>
+ 	<td><img src="https://images.all-free-download.com/images/graphicthumb/beautiful_cat_picture_6_168770.jpg" class='first-image' alt='Studious Cat'></td>
+ 	</tr>
+ 	</table>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ 	<script>
+ 	$(document).ready(() => {
+ 	$('.hide-button').on('click', () <= {
+ 	$('first-image').hide();
+ 	})
+ 	});
+ 	</script>
+   </body>
+  -->
